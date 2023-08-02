@@ -15,3 +15,9 @@ Key Features:
 8. Integration with Smart Meters: Explores potential integration with smart meters or IoT devices for real-time energy consumption data capture, eliminating the need for manual input and enhancing data accuracy.
 
 The application will potentially integrate with smart meters or Internet of Things (IoT) devices, enabling real-time energy consumption data capture. This feature eliminates the need for manual input, enhancing the accuracy of data and the convenience for users. Through this, the application not only tracks energy usage but also positions itself at the forefront of technological advancements in the energy sector.
+
+App Screenshots:
+![java_GxvQReneer](https://github.com/NandeKunn/oo3DionysusProject/assets/137038584/b3ebd2ce-3f45-4979-8094-80691a49d489)
+![java_9pfAE3pEaJ](https://github.com/NandeKunn/oo3DionysusProject/assets/137038584/25bb5107-449f-4adf-b01b-2efcaed9c0fc)
+
+
