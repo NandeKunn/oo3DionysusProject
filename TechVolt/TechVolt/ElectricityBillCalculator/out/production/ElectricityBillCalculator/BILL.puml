@@ -1,0 +1,37 @@
+@startuml
+
+class ElectricityBillProjection {
+  - applianceBox: ComboBox<String>
+  - hoursUsedField: TextField
+  - resultLabel: Label
+  - tipsArea: TextArea
+  - applianceHoursMap: Map<String, Double>
+  + start(Stage primaryStage)
+  - addAppliance()
+  - addCustomAppliance()
+}
+
+class Login {
+  - usernameField: TextField
+  - passwordField: PasswordField
+  + start(Stage primaryStage)
+  - login(Stage primaryStage)
+}
+
+interface TipsGenerator {
+  + suggestTips(predictedBill: double): String
+}
+
+class BillPredictor {
+  - appliancePowerMap: Map<String, Double>
+  + BillPredictor()
+  + predictNextMonthBill(applianceHoursMap: Map<String, Double>): double
+  - calculateTotalPowerUsage(applianceHoursMap: Map<String, Double>): double
+  - initializeAppliancePowerMap()
+}
+
+Login --> ElectricityBillProjection
+ElectricityBillProjection --|> TipsGenerator
+ElectricityBillProjection --|> BillPredictor
+
+@enduml
